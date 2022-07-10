@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OtherCall</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Ionic Styles-->
+    <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css"/>
+  </head>
+  <body>
+    <ion-app>
+      <ion-header>
+          <ion-toolbar>
+                   
+                   <ion-title size="small"> <ion-icon name="calculator-outline"></ion-icon> Area del triangulo</ion-title>
+          </ion-toolbar>
+      </ion-header>
+       
+      <ion-content>
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                      <ion-card>
+                          <ion-card-header>
+                              <ion-card-title>
+                                  <ion-row id="resultado"></ion-row>
+                              </ion-card-title>
+                          </ion-card-header >
+                          <ion-card-content>
+                              <ion-item class="ion-margin-vertical">
+                                  <ion-label position="floating">
+                                      Ingrese lado A
+                                  </ion-label>
+                                  <ion-input type="number" id="ladoA"></ion-input>
+                              </ion-item>
+                              <ion-item class="ion-margin-vertical">
+                                  <ion-label position="floating">
+                                      Ingrese lado B
+                                  </ion-label>
+                                  <ion-input type="number" id="ladoB"></ion-input>
+                              </ion-item>
+                              <ion-item>
+                                  <ion-label position="floating">
+                                      Ingrese ^C
+                                  </ion-label>
+                                  <ion-input type="number" id="anguloC"></ion-input>
+                              </ion-item>
+                              <ion-button id="calcular">
+                                  Calcular
+                              </ion-button>
+                          </ion-card-content>
+                      </ion-card>
+                  </ion-col>
+              </ion-row>
+              
+          </ion-grid>
+      
+      </ion-content>
+      
+      </ion-app>
+
+
+    
+    <!-- Ionic lib -->
+    <script type="module" src="https://unpkg.com/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+    <!-- Ionic lib fallback for older browsers -->
+    <script nomodule src="https://unpkg.com/@ionic/core@next/dist/ionic/ionic.js"></script>
+
+    <script src="./js/app.js" type="module"></script>
+    <script src="capacitor.js" type="module"></script>
+  </body>
+</html>

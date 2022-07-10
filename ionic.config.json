@@ -1,0 +1,7 @@
+{
+  "name": "OtherCall",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
